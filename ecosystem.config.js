@@ -36,7 +36,7 @@ module.exports = {
       user: 'ubuntu',
       host: '34.234.93.5',
       ref: 'origin/develop',
-      repo: 'github.com/tejasdesai0531/vargani-frontend.git',
+      repo: 'git@github.com/tejasdesai0531/vargani-frontend.git',
       path: '/home/ubuntu/Vargani-Web-Staging1',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --only Vargani-Web-Staging1',
     },
