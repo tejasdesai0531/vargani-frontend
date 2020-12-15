@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name: 'Vargani-Web-Production1',
+      name: 'Vargani-Web-Staging1',
       script: 'npm',
       args: 'run staging',
       "env": {
@@ -17,9 +17,12 @@ module.exports = {
 
     // Second application
     {
-      name: 'Vargani-Web-Production2',
+      name: 'Vargani-Web-Staging2',
       script: 'npm',
-      args: 'run staging'
+      args: 'run staging',
+      "env": {
+        "PORT": 3001
+      }
     }
   ],
 
@@ -32,10 +35,19 @@ module.exports = {
       key: '../vargani001.pem',
       user: 'ubuntu',
       host: '34.234.93.5',
-      ref: 'origin/main',
+      ref: 'origin/develop',
       repo: 'github.com/tejasdesai0531/vargani-frontend.git',
-      path: '/home/ubuntu/Falcon-Web-Production1',
-      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --only Vargani-Web-Production1',
+      path: '/home/ubuntu/Vargani-Web-Staging1',
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --only Vargani-Web-Staging1',
+    },
+    production2: {
+      key: '../vargani001.pem',
+      user: 'ubuntu',
+      host: '34.234.93.5',
+      ref: 'origin/develop',
+      repo: 'github.com/tejasdesai0531/vargani-frontend.git',
+      path: '/home/ubuntu/Vargani-Web-Staging2',
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --only Vargani-Web-Staging2',
     }
   }
 };
