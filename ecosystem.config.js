@@ -32,7 +32,7 @@ module.exports = {
       key: '../vargani001.pem',
       user: 'ubuntu',
       host: '34.234.93.5',
-      ref: 'origin/master',
+      ref: 'origin/main',
       repo: 'github.com/tejasdesai0531/vargani-frontend.git',
       path: '/home/ubuntu/Falcon-Web-Production1',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js --only Vargani-Web-Production1',
