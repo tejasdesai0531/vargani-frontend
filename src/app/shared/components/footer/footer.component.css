@@ -1,0 +1,9 @@
+.footer-container {
+    background: red;
+    padding: 20px; 
+}
+
+.footer-container > p {
+    margin: auto;
+    text-align: center;
+}

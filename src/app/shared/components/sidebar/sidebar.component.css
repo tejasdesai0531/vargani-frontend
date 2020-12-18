@@ -1,0 +1,26 @@
+ul {
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+    background: royalblue;
+    cursor: pointer;
+}
+
+li > a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px 5px 10px;
+    color: white;
+}
+
+li:hover {
+    background: rgb(39, 71, 167);
+}
+
+li:active {
+    background-color: rgb(39, 71, 167);
+    transform: scale(0.9);
+  }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from '../../../core/services/util/header.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private __headerService: HeaderService) { }
 
   ngOnInit(): void {
+  }
+
+  editButtonClicked() {
+    this.__headerService.editButtonClicked();
+    console.log("event emited from header")
   }
 
 }

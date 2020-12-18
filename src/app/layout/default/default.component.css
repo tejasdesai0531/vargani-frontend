@@ -1,0 +1,21 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content { 
+    flex-grow: 1;
+    display: flex;
+}
+
+.sidebar {
+    background: rgb(3, 17, 44);
+    flex: 2;
+}
+
+.temp {
+    flex: 10;
+    background: purple;
+}
+

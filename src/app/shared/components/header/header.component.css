@@ -1,0 +1,33 @@
+.header-container {
+    padding: 20px 30px;
+    display: flex;
+    background: rgb(92, 31, 60);
+}
+
+.toggle-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    outline: none;
+}
+
+.edit-btn {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.edit-btn > i {
+    font-size: 20px;
+}
+
+.city-btn {
+    padding: 0 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
