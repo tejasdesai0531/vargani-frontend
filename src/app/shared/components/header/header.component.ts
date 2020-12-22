@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
 
   editButtonClicked() {
     this.__headerService.editButtonClicked();
-    console.log("event emited from header")
   }
 
 }

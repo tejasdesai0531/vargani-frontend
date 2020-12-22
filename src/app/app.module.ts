@@ -11,7 +11,7 @@ import { DefaultModule } from './layout/default/default.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DefaultModule
+    DefaultModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
