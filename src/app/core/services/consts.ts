@@ -8,5 +8,5 @@ export enum ApiMethod {
 }
 
 export enum AuthEndPoints {
-    LOGIN = "/login"
+    GET_ALL_FESTIVALS = "/festivals/getAllFestivals"
 }
